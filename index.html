@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geomatry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header></header>
+    <main class="my-20 mx-12">
+        <div class="flex">
+            <div class="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                 <!-- Triangle Calculation -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/triangle.png" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Triangle</h2>
+                        <p>Area (A) = 0.5 X b X h</p>
+                        <div>
+                            <input class="w-24 text-2xl p-2 border bg-[#F1F1F1] rounded-md" type="text" id="triangle-base" placeholder="b">
+                            <span>cm</span>
+                            <input class="w-24 text-2xl p-2 bg-[#F1F1F1] rounded-md" type="text" id="triangle-height" placeholder="h">
+                            <span>cm</span>
+                        </div>
+                        <p>Area: <span id="area-value"></span> cm<sup>2</sup></p>
+                        <div class="card-actions">
+                            <button onclick="calculateTriangleArea()" class="btn btn-primary w-48">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/triangle.png" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Triangle</h2>
+                        <p>Area (A) = 0.5 X b X h</p>
+                        <div>
+                            <input class="w-24 text-2xl p-2 border bg-[#F1F1F1] rounded-md" type="text" id="" placeholder="b">
+                            <span>cm</span>
+                            <input class="w-24 text-2xl p-2 bg-[#F1F1F1] rounded-md" type="text" id="" placeholder="h">
+                            <span>cm</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-48">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/triangle.png" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Triangle</h2>
+                        <p>Area (A) = 0.5 X b X h</p>
+                        <div>
+                            <input class="w-24 text-2xl p-2 border bg-[#F1F1F1] rounded-md" type="text" id="" placeholder="b">
+                            <span>cm</span>
+                            <input class="w-24 text-2xl p-2 bg-[#F1F1F1] rounded-md" type="text" id="" placeholder="h">
+                            <span>cm</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-48">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+        
+        </div>
+            <div class="flex-1 w-auto border-2 border-gray-500">
+                <h3 class="font-bold text-center border-b-2 border-black">Area Calculation</h3>
+            </div>
+        </div>
+    </main>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
