@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
     <header></header>
     <main class="my-20 mx-12">
@@ -28,7 +27,7 @@
                             <input class="w-24 text-2xl p-2 bg-[#F1F1F1] rounded-md" type="text" id="triangle-height" placeholder="h">
                             <span>cm</span>
                         </div>
-                        <p>Area: <span id="area-value"></span> cm<sup>2</sup></p>
+                        <p>Area: <span id="area-value">0</span>cm<sup>2</sup></p>
                         <div class="card-actions">
                             <button onclick="calculateTriangleArea()" class="btn btn-primary w-48">Calculate</button>
                         </div>
@@ -36,19 +35,20 @@
                 </div>
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="images/triangle.png" />
+                        <img src="images/rectangle.png" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Triangle</h2>
-                        <p>Area (A) = 0.5 X b X h</p>
+                        <p>Area (A) = w X l</p>
                         <div>
-                            <input class="w-24 text-2xl p-2 border bg-[#F1F1F1] rounded-md" type="text" id="" placeholder="b">
+                            <input class="w-24 text-2xl p-2 border bg-[#F1F1F1] rounded-md" type="text" id="rectangle-width" placeholder="width">
                             <span>cm</span>
-                            <input class="w-24 text-2xl p-2 bg-[#F1F1F1] rounded-md" type="text" id="" placeholder="h">
+                            <input class="w-24 text-2xl p-2 bg-[#F1F1F1] rounded-md" type="text" id="rectangle-length" placeholder="length">
                             <span>cm</span>
                         </div>
+                        <p>Area: <span id="area-rectangle">0</span>cm<sup>2</sup></p>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-48">Calculate</button>
+                            <button onclick="getRectangleAria()" class="btn btn-primary w-48">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -78,6 +78,7 @@
         </div>
     </main>
     <script src="JS/triangle.js"></script>
+    <script src="JS/rectangle.js"></script>
 </body>
 
 </html>
