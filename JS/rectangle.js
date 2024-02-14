@@ -1,4 +1,4 @@
-function getRectangleAria() {
+function calculateRectangleAria() {
     const rectangleWidth = document.getElementById('rectangle-width');
     const rectangleWidthText = rectangleWidth.value;
     const width = parseFloat(rectangleWidthText);
